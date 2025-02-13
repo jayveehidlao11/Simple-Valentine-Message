@@ -25,19 +25,21 @@ body{
     width: 100%;
     display: none;
     /* justify-content: center;   */
-    animation-name: showFlower;
-    animation-duration: 3s;
+   
 }
-@keyframes showFlower{
-    from{
-        opacity: .5;
-    }
-}
+
 .boquet-image img{
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1;
     max-width: 50%;
+    animation-name: showFlower;
+    animation-duration: 4s;
+}
+@keyframes showFlower{
+    from{
+        opacity: .2;
+    }
 }
 .content{
     
