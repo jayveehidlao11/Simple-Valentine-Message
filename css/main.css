@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding:30px 0px;
+    font-family: 'Cascadia Code ExtraLight';
+    background-color: rgb(254, 255, 255);
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+.container .image-container{
+    height: 400px;
+    max-width: 90%;
+    margin: auto;
+    aspect-ratio: 3/2;
+}
+.image-container img{
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+    height: 100%;
+    
+}
+.boquet-image {
+    width: 100%;
+    display: none;
+    /* justify-content: center;   */
+    animation-name: showFlower;
+    animation-duration: 3s;
+}
+@keyframes showFlower{
+    from{
+        opacity: .5;
+    }
+}
+.boquet-image img{
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1;
+    max-width: 50%;
+}
+.content{
+    
+    max-width:50%;
+    min-width:80%;
+    margin: 0 auto;
+}
+.content .header{
+    min-width: 100%;
+    text-align: center;
+}
+.content .content-body{
+    text-align: center;
+}
+.last-paragraph{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+}
+button{
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    background-color: rgb(231, 231, 65);
+    margin: auto    ;
+}
+button:hover{
+    background-color: rgb(237, 237, 98);
+}
